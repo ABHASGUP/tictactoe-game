@@ -1,0 +1,8 @@
+[[headers]]
+  for = "tictactoe-game/sw-check-permissions-d3eda.js"
+  [headers.values]
+    cache-control = "public, max-age=31536000"
+    content-type = "application/javascript"
+
+[build]
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF './sw-check-permissions-d3eda.js'"
